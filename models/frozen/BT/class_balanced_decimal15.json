@@ -1,0 +1,167 @@
+{
+  "arm": "class_balanced",
+  "feature_set": "decimal15",
+  "feature_columns": [
+    "tsec_mean_ts",
+    "tsec_var_ts",
+    "tsec_spread_ts",
+    "tsec_mean_ds",
+    "tsec_var_ds",
+    "tsec_spread_ds",
+    "tsec_count_rs_ge8",
+    "tsec_count_is",
+    "segment_length",
+    "log2_length",
+    "dec_star",
+    "dec_star_exception_share",
+    "dec_star_int_bitwidth",
+    "dec_star_delta_bitwidth",
+    "dec_scale_change_rate"
+  ],
+  "feature_count": 15,
+  "top_k": 2,
+  "training_rows": 414,
+  "training_sources": [
+    [
+      "AIS",
+      "ais_20200801_20200815_366932970_sog",
+      "df1b3e052cfc957d4086c6f297654de2c164b4fff9196ef232f5d836b78317c3"
+    ],
+    [
+      "AIS",
+      "ais_20200801_20200815_366934290_sog",
+      "166c0b753f1fdc42c7a56bd22eac5f7c9c99b611488238581be2533100f8f8a3"
+    ],
+    [
+      "AIS",
+      "ais_20200801_20200815_367690430_sog",
+      "460e6f8bf91250159d04163af4a8c114c82b46a32d33f33ee6805da295ae0bf6"
+    ],
+    [
+      "SCADA",
+      "Kelmarsh_1_power",
+      "a3dca0722be5c3804a714fb9601e57238d37800fc03ed50608808d72bc089927"
+    ],
+    [
+      "SRRL",
+      "202001_SPlite2",
+      "8a3e3284de4932d714999697f3499d38f28b221090b3fc048d139299c8699fc9"
+    ],
+    [
+      "SRRL",
+      "202005_SPlite2",
+      "c477a7be2945fb8d77f973e6f7fc11ff145af3b46fc2c7284eb48a8fe12c94a8"
+    ],
+    [
+      "derived",
+      "geolife_074_lon",
+      "47455156555aedafc9ca6b1b7ad2c9e1bd49210d742fb37dbd7e0d4d04c8cdcb"
+    ],
+    [
+      "energy",
+      "household_global_active_power_7day",
+      "4bbb3b735ed1743002288bfc71a943938fa2f98fae7ee3cd42846c1c43e07df4"
+    ],
+    [
+      "high_precision_float64_20k",
+      "BM",
+      "11bc5d17f4045860cdad4201598d26ff1139549629c4a3c087969254f22cb2e4"
+    ],
+    [
+      "high_precision_float64_20k",
+      "BW",
+      "5bac23f76b5a0bfe1aaee122e2c45f83945e8d45caaaed56b27dbfe4c282d00c"
+    ]
+  ],
+  "held_out_identity": [
+    "high_precision_float64_20k",
+    "BT",
+    "ffdac991ef9f9bc4318f56c6508e59b4fa772bcaec1a61907fca73e5b37152ac"
+  ],
+  "classes": [
+    "alp",
+    "alp+tail:chimp128",
+    "alp+tail:gorilla",
+    "alp+tail:rle+tsxor",
+    "alp+tail:tsxor",
+    "btr_decimal_fixed",
+    "btr_dict_bp",
+    "chimp",
+    "chimp128",
+    "gorilla",
+    "rle+tsxor",
+    "tsxor"
+  ],
+  "training_class_counts": {
+    "btr_dict_bp": 33,
+    "alp": 157,
+    "btr_decimal_fixed": 24,
+    "chimp128": 70,
+    "rle+tsxor": 71,
+    "alp+tail:tsxor": 7,
+    "alp+tail:rle+tsxor": 35,
+    "alp+tail:chimp128": 12,
+    "tsxor": 1,
+    "chimp": 2,
+    "alp+tail:gorilla": 1,
+    "gorilla": 1
+  },
+  "rf_parameters": {
+    "n_estimators": 100,
+    "max_depth": null,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "bootstrap": true,
+    "random_state": 0,
+    "n_jobs": 1
+  },
+  "library_versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.6.0",
+    "python": "3.12.3"
+  },
+  "training_seconds": 0.292847104370594,
+  "imputer_medians": [
+    109.5332372834579,
+    5449.322415806644,
+    342.33299999999997,
+    0.0,
+    9.098358927786089,
+    47.96052129999999,
+    17.0,
+    432.0,
+    1024.0,
+    10.0,
+    3.0,
+    0.0,
+    20.0,
+    20.0,
+    0.2503281204455674
+  ],
+  "training_only_median_imputation": true,
+  "test_costs_used": false,
+  "test_labels_used": false,
+  "test_support_status_used": false,
+  "unchanged_original_region_union": true,
+  "retained_actions": [
+    "gorilla",
+    "chimp",
+    "chimp128",
+    "tsxor",
+    "rle+tsxor",
+    "alp",
+    "btr_dict_bp",
+    "btr_decimal_fixed"
+  ],
+  "sample_weights_sha256": "1494bd9dbf004e2c82947dd13fc5d61bc19b35354e5fff3b5eb50c42ce4e458e",
+  "original_class_balanced_weights_unchanged": true,
+  "extraction_scope": "original ALL40 cached training columns, fixed projection",
+  "model_path": "class_balanced_decimal15.joblib",
+  "model_sha256": "470b56eff15a8f0c27dddc5977bbee45c8b2a61c1c385736b9485c160316318e",
+  "release_source_runtime_manifest_sha256": "e84101ffe6420449ecab8ffc4f52f4817b9d7580790da1bfdca1c45448f10813",
+  "release_source_metadata_json_pointer": "/model_specs/9/metadata",
+  "release_metadata_change": "model_path relocated; original model and all training metadata unchanged; provenance fields added"
+}

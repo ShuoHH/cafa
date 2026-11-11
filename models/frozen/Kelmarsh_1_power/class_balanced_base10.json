@@ -1,0 +1,317 @@
+{
+  "arm": "class_balanced",
+  "feature_set": "base10",
+  "feature_columns": [
+    "tsec_mean_ts",
+    "tsec_var_ts",
+    "tsec_spread_ts",
+    "tsec_mean_ds",
+    "tsec_var_ds",
+    "tsec_spread_ds",
+    "tsec_count_rs_ge8",
+    "tsec_count_is",
+    "segment_length",
+    "log2_length"
+  ],
+  "feature_count": 10,
+  "training_rows": 383,
+  "training_sources": [
+    [
+      "AIS",
+      "ais_20200801_20200815_366932970_sog",
+      "df1b3e052cfc957d4086c6f297654de2c164b4fff9196ef232f5d836b78317c3"
+    ],
+    [
+      "AIS",
+      "ais_20200801_20200815_366934290_sog",
+      "166c0b753f1fdc42c7a56bd22eac5f7c9c99b611488238581be2533100f8f8a3"
+    ],
+    [
+      "AIS",
+      "ais_20200801_20200815_367690430_sog",
+      "460e6f8bf91250159d04163af4a8c114c82b46a32d33f33ee6805da295ae0bf6"
+    ],
+    [
+      "SRRL",
+      "202001_SPlite2",
+      "8a3e3284de4932d714999697f3499d38f28b221090b3fc048d139299c8699fc9"
+    ],
+    [
+      "SRRL",
+      "202005_SPlite2",
+      "c477a7be2945fb8d77f973e6f7fc11ff145af3b46fc2c7284eb48a8fe12c94a8"
+    ],
+    [
+      "derived",
+      "geolife_074_lon",
+      "47455156555aedafc9ca6b1b7ad2c9e1bd49210d742fb37dbd7e0d4d04c8cdcb"
+    ],
+    [
+      "energy",
+      "household_global_active_power_7day",
+      "4bbb3b735ed1743002288bfc71a943938fa2f98fae7ee3cd42846c1c43e07df4"
+    ],
+    [
+      "high_precision_float64_20k",
+      "BM",
+      "11bc5d17f4045860cdad4201598d26ff1139549629c4a3c087969254f22cb2e4"
+    ],
+    [
+      "high_precision_float64_20k",
+      "BT",
+      "ffdac991ef9f9bc4318f56c6508e59b4fa772bcaec1a61907fca73e5b37152ac"
+    ],
+    [
+      "high_precision_float64_20k",
+      "BW",
+      "5bac23f76b5a0bfe1aaee122e2c45f83945e8d45caaaed56b27dbfe4c282d00c"
+    ]
+  ],
+  "held_out_identity": [
+    "SCADA",
+    "Kelmarsh_1_power",
+    "a3dca0722be5c3804a714fb9601e57238d37800fc03ed50608808d72bc089927"
+  ],
+  "classes": [
+    "alp",
+    "alp+tail:chimp128",
+    "alp+tail:gorilla",
+    "alp+tail:rle+tsxor",
+    "alp+tail:tsxor",
+    "btr_decimal_fixed",
+    "btr_dict_bp",
+    "chimp",
+    "chimp128",
+    "gorilla",
+    "rle+tsxor",
+    "tsxor"
+  ],
+  "rf_parameters": {
+    "n_estimators": 100,
+    "max_depth": null,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "bootstrap": true,
+    "random_state": 0,
+    "n_jobs": 1
+  },
+  "training_seconds": 0.30739177018404007,
+  "inference_seconds": 0.007795125246047974,
+  "training_only_median_imputation": true,
+  "imputer_medians": [
+    35.26424198710937,
+    29.734682253205925,
+    27.8099995,
+    0.0,
+    0.9489772969150533,
+    13.2,
+    33.0,
+    410.0,
+    1024.0,
+    10.0
+  ],
+  "test_costs_used": false,
+  "test_labels_used": false,
+  "test_support_status_used": false,
+  "retained_actions": [
+    "gorilla",
+    "chimp",
+    "chimp128",
+    "tsxor",
+    "rle+tsxor",
+    "alp",
+    "btr_dict_bp",
+    "btr_decimal_fixed"
+  ],
+  "alp_tail_class_labels_unchanged": true,
+  "top_k": 2,
+  "training_class_counts": {
+    "alp": 172,
+    "alp+tail:chimp128": 14,
+    "alp+tail:gorilla": 1,
+    "alp+tail:rle+tsxor": 35,
+    "alp+tail:tsxor": 7,
+    "btr_decimal_fixed": 24,
+    "btr_dict_bp": 33,
+    "chimp": 2,
+    "chimp128": 22,
+    "gorilla": 1,
+    "rle+tsxor": 71,
+    "tsxor": 1
+  },
+  "training_source_counts": [
+    {
+      "dataset": "AIS",
+      "series": "ais_20200801_20200815_366932970_sog",
+      "sha256": "df1b3e052cfc957d4086c6f297654de2c164b4fff9196ef232f5d836b78317c3",
+      "rows": 23
+    },
+    {
+      "dataset": "AIS",
+      "series": "ais_20200801_20200815_366934290_sog",
+      "sha256": "166c0b753f1fdc42c7a56bd22eac5f7c9c99b611488238581be2533100f8f8a3",
+      "rows": 25
+    },
+    {
+      "dataset": "AIS",
+      "series": "ais_20200801_20200815_367690430_sog",
+      "sha256": "460e6f8bf91250159d04163af4a8c114c82b46a32d33f33ee6805da295ae0bf6",
+      "rows": 19
+    },
+    {
+      "dataset": "SRRL",
+      "series": "202001_SPlite2",
+      "sha256": "8a3e3284de4932d714999697f3499d38f28b221090b3fc048d139299c8699fc9",
+      "rows": 82
+    },
+    {
+      "dataset": "SRRL",
+      "series": "202005_SPlite2",
+      "sha256": "c477a7be2945fb8d77f973e6f7fc11ff145af3b46fc2c7284eb48a8fe12c94a8",
+      "rows": 94
+    },
+    {
+      "dataset": "derived",
+      "series": "geolife_074_lon",
+      "sha256": "47455156555aedafc9ca6b1b7ad2c9e1bd49210d742fb37dbd7e0d4d04c8cdcb",
+      "rows": 38
+    },
+    {
+      "dataset": "energy",
+      "series": "household_global_active_power_7day",
+      "sha256": "4bbb3b735ed1743002288bfc71a943938fa2f98fae7ee3cd42846c1c43e07df4",
+      "rows": 17
+    },
+    {
+      "dataset": "high_precision_float64_20k",
+      "series": "BM",
+      "sha256": "11bc5d17f4045860cdad4201598d26ff1139549629c4a3c087969254f22cb2e4",
+      "rows": 32
+    },
+    {
+      "dataset": "high_precision_float64_20k",
+      "series": "BT",
+      "sha256": "ffdac991ef9f9bc4318f56c6508e59b4fa772bcaec1a61907fca73e5b37152ac",
+      "rows": 27
+    },
+    {
+      "dataset": "high_precision_float64_20k",
+      "series": "BW",
+      "sha256": "5bac23f76b5a0bfe1aaee122e2c45f83945e8d45caaaed56b27dbfe4c282d00c",
+      "rows": 26
+    }
+  ],
+  "class_weight_totals": {
+    "alp": 31.91666666666671,
+    "alp+tail:chimp128": 31.916666666666668,
+    "alp+tail:gorilla": 31.91666666666666,
+    "alp+tail:rle+tsxor": 31.91666666666665,
+    "alp+tail:tsxor": 31.916666666666664,
+    "btr_decimal_fixed": 31.91666666666666,
+    "btr_dict_bp": 31.916666666666643,
+    "chimp": 31.91666666666666,
+    "chimp128": 31.916666666666654,
+    "gorilla": 31.91666666666666,
+    "rle+tsxor": 31.916666666666625,
+    "tsxor": 31.91666666666666
+  },
+  "source_weight_totals": [
+    {
+      "dataset": "AIS",
+      "series": "ais_20200801_20200815_366932970_sog",
+      "sha256": "df1b3e052cfc957d4086c6f297654de2c164b4fff9196ef232f5d836b78317c3",
+      "rows": 23,
+      "weight_total": 12.653143579588875,
+      "mean_weight": 0.5501366773734293
+    },
+    {
+      "dataset": "AIS",
+      "series": "ais_20200801_20200815_366934290_sog",
+      "sha256": "166c0b753f1fdc42c7a56bd22eac5f7c9c99b611488238581be2533100f8f8a3",
+      "rows": 25,
+      "weight_total": 14.577191212816,
+      "mean_weight": 0.58308764851264
+    },
+    {
+      "dataset": "AIS",
+      "series": "ais_20200801_20200815_367690430_sog",
+      "sha256": "460e6f8bf91250159d04163af4a8c114c82b46a32d33f33ee6805da295ae0bf6",
+      "rows": 19,
+      "weight_total": 7.982255407001556,
+      "mean_weight": 0.42011870563166087
+    },
+    {
+      "dataset": "SRRL",
+      "series": "202001_SPlite2",
+      "sha256": "8a3e3284de4932d714999697f3499d38f28b221090b3fc048d139299c8699fc9",
+      "rows": 82,
+      "weight_total": 53.20406366434458,
+      "mean_weight": 0.648830044687129
+    },
+    {
+      "dataset": "SRRL",
+      "series": "202005_SPlite2",
+      "sha256": "c477a7be2945fb8d77f973e6f7fc11ff145af3b46fc2c7284eb48a8fe12c94a8",
+      "rows": 94,
+      "weight_total": 62.241628503106995,
+      "mean_weight": 0.6621449840756063
+    },
+    {
+      "dataset": "derived",
+      "series": "geolife_074_lon",
+      "sha256": "47455156555aedafc9ca6b1b7ad2c9e1bd49210d742fb37dbd7e0d4d04c8cdcb",
+      "rows": 38,
+      "weight_total": 122.21548122420212,
+      "mean_weight": 3.2161968743211085
+    },
+    {
+      "dataset": "energy",
+      "series": "household_global_active_power_7day",
+      "sha256": "4bbb3b735ed1743002288bfc71a943938fa2f98fae7ee3cd42846c1c43e07df4",
+      "rows": 17,
+      "weight_total": 14.014350313768919,
+      "mean_weight": 0.8243735478687599
+    },
+    {
+      "dataset": "high_precision_float64_20k",
+      "series": "BM",
+      "sha256": "11bc5d17f4045860cdad4201598d26ff1139549629c4a3c087969254f22cb2e4",
+      "rows": 32,
+      "weight_total": 57.76923093056814,
+      "mean_weight": 1.8052884665802544
+    },
+    {
+      "dataset": "high_precision_float64_20k",
+      "series": "BT",
+      "sha256": "ffdac991ef9f9bc4318f56c6508e59b4fa772bcaec1a61907fca73e5b37152ac",
+      "rows": 27,
+      "weight_total": 21.850529799657703,
+      "mean_weight": 0.8092788814688038
+    },
+    {
+      "dataset": "high_precision_float64_20k",
+      "series": "BW",
+      "sha256": "5bac23f76b5a0bfe1aaee122e2c45f83945e8d45caaaed56b27dbfe4c282d00c",
+      "rows": 26,
+      "weight_total": 16.49212536494513,
+      "mean_weight": 0.6343125140363512
+    }
+  ],
+  "training_weight_sum": 382.99999999999994,
+  "training_weight_mean": 0.9999999999999999,
+  "sample_weights_supplied": true,
+  "training_weights_sha256": "d85b991dfefbb75606d291192af671f90dd731aef8fc04ca72e8cc5a6a864153",
+  "model_path": "class_balanced_base10.joblib",
+  "model_sha256": "301e20bd0c9b0a3d782df300a33f0f01250ee52d03d2029c4a496dd4d7dfd661",
+  "library_versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.6.0",
+    "python": "3.12.3"
+  },
+  "release_source_runtime_manifest_sha256": "e84101ffe6420449ecab8ffc4f52f4817b9d7580790da1bfdca1c45448f10813",
+  "release_source_metadata_json_pointer": "/model_specs/20/metadata",
+  "release_metadata_change": "model_path relocated; original model and all training metadata unchanged; provenance fields added"
+}

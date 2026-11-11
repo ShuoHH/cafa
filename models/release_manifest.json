@@ -1,0 +1,1254 @@
+{
+  "schema_version": 1,
+  "release": "strict8_frozen_retained8_20261112_v1",
+  "path_base": "repository_root",
+  "models_unpickled_during_release_preparation": true,
+  "unpickling_scope": "Only SHA-authenticated trusted compact20 folds were loaded for runtime schema validation after byte-exact asset copying; no weights were refitted or rewritten.",
+  "training_performed": false,
+  "weights_changed": false,
+  "model_artifact_count": 36,
+  "primary_compact20_fold_count": 9,
+  "feature_variants": [
+    "base10",
+    "decimal15",
+    "residue15",
+    "compact20"
+  ],
+  "library_versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.6.0",
+    "python": "3.12.3"
+  },
+  "provenance": {
+    "runtime_manifest_path": "models/provenance/runtime_manifest.original.json",
+    "runtime_manifest_sha256": "e84101ffe6420449ecab8ffc4f52f4817b9d7580790da1bfdca1c45448f10813",
+    "archive_sources": [
+      {
+        "id": "completed11",
+        "path": "output/retained8_rerun_20261111_v1/preservation_completed11_before_cache_20261111_v1.tar.gz",
+        "bytes": 482816477,
+        "sha256": "ec8a7bd9ed4a0c4c45f4d8e3f7f261f7cc686dcd4c6f8576fc588f5c23308da0",
+        "manifest_sha256": "4eaf8037ee53d37bd5431f4980b7224b3f7b7fee9734e3167ced90a4e255b4a4",
+        "manifest_entries": 64153,
+        "extracted_files": 244
+      },
+      {
+        "id": "final2",
+        "path": "output/retained8_rerun_20261111_v1/preservation_final2_and_completion_20261111_v1.tar.gz",
+        "bytes": 69232415,
+        "sha256": "8414813a7f4df17a764a1a05b3b9c6c82aea6dc78cd4ead0d6b3fff08a0d22fa",
+        "manifest_sha256": "83978819e532be7044fb67b45113d26c41d7e1a9d2faad9fd2c66dbb1ed96d03",
+        "manifest_entries": 12815,
+        "extracted_files": 3
+      },
+      {
+        "id": "selector",
+        "path": "output/retained8_selector_quality_20261111_v1/selector_three_studies_preservation_20261111_v1.tar.gz",
+        "bytes": 39521727,
+        "sha256": "3c864e89760081ae11a3ac2d1b63154df434c48a7213fefd2916b377377ac5e2",
+        "manifest_sha256": "c5a066f5c024361f6c48899d9e0d023ab32dea42580c1730912d65f2f3df928a",
+        "manifest_entries": 1581,
+        "extracted_files": 12
+      }
+    ],
+    "original_fold_metadata": [
+      {
+        "path": "models/provenance/202001_SPlite2/model_metadata.original.json",
+        "sha256": "07b6a27d4266d03c5d5abe1a823ddc08e3862d927a5fed2312411f1197e49ece",
+        "original_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/202001_SPlite2/model_metadata.json"
+      },
+      {
+        "path": "models/provenance/202005_SPlite2/model_metadata.original.json",
+        "sha256": "870ff0384534b2d4d8d496d6725bac4393b445629a9fc6454b95572b0955ff36",
+        "original_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/202005_SPlite2/model_metadata.json"
+      },
+      {
+        "path": "models/provenance/BM/model_metadata.original.json",
+        "sha256": "87593b90fc52c08ebfafbf5feb4c6e9ca1d398d935f09ef9ce7b999218e29bdb",
+        "original_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/BM/model_metadata.json"
+      },
+      {
+        "path": "models/provenance/BT/model_metadata.original.json",
+        "sha256": "a5bc7bd316333aa25d7d2e991b66aec943ba1fa75a035883f8dc9206e3f263ae",
+        "original_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/BT/model_metadata.json"
+      },
+      {
+        "path": "models/provenance/Kelmarsh_1_power/model_metadata.original.json",
+        "sha256": "ca7c7ff5fcf55d959975ee3d612e4f819f299c6e194710fab7cef36bf9354269",
+        "original_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/Kelmarsh_1_power/model_metadata.json"
+      },
+      {
+        "path": "models/provenance/ais_20200801_20200815_366932970_sog/model_metadata.original.json",
+        "sha256": "9117c742770e5db5ae3336991679626d1bd661adf80dc4e9929ae22731fc1627",
+        "original_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_366932970_sog/model_metadata.json"
+      },
+      {
+        "path": "models/provenance/ais_20200801_20200815_366934290_sog/model_metadata.original.json",
+        "sha256": "a13e70342c536b75b26cb0f96c08f50936c85e8983e6e42bc269f5921ee0cfa2",
+        "original_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_366934290_sog/model_metadata.json"
+      },
+      {
+        "path": "models/provenance/ais_20200801_20200815_367690430_sog/model_metadata.original.json",
+        "sha256": "329056b070211bbfcd4d9790d45f5789fb84716bebb97a541484a3d8a7d7952b",
+        "original_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_367690430_sog/model_metadata.json"
+      },
+      {
+        "path": "models/provenance/geolife_074_lon/model_metadata.original.json",
+        "sha256": "9c35595256267ab850f3235f02e69f191d089159deb9c33c0d597cf31f956b90",
+        "original_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/geolife_074_lon/model_metadata.json"
+      }
+    ]
+  },
+  "compatibility_default": {
+    "model_path": "models/class_balanced_compact20.joblib",
+    "metadata_path": "models/class_balanced_compact20.json",
+    "model_sha256": "3c2bbc7b95c79d77cdbc514d578ffbeab08efdb02fe20f3bdf51faeba87155b0",
+    "metadata_sha256": "9ec93f3c669b65a01e3a57cd8a6f6c082b7ad7445732b1cd56817a57828b19ea",
+    "anchor_series": "202005_SPlite2",
+    "existing_files_modified": false,
+    "scope": "single May-fold compatibility/demo default, not a universal per-series experimental fold"
+  },
+  "artifacts": [
+    {
+      "id": "202005_SPlite2:base10",
+      "anchor_series": "202005_SPlite2",
+      "historical_fold_number": 1,
+      "variant": "base10",
+      "runtime_variant": "base10",
+      "feature_count": 10,
+      "model_path": "models/frozen/202005_SPlite2/class_balanced_base10.joblib",
+      "metadata_path": "models/frozen/202005_SPlite2/class_balanced_base10.json",
+      "model_sha256": "a86dac6bc4fa8547a74632595196ba4ae6b9e0e04b621a2b351c6d2a0a9571e0",
+      "model_bytes": 408604,
+      "metadata_sha256": "a07ba53bb6e0326837974a5d376f74371c3447fd08e892a496d2fd2f65fdd003",
+      "held_out_identity": [
+        "SRRL",
+        "202005_SPlite2",
+        "c477a7be2945fb8d77f973e6f7fc11ff145af3b46fc2c7284eb48a8fe12c94a8"
+      ],
+      "training_rows": 347,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/202005_SPlite2/class_balanced_base10.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/202005_SPlite2/class_balanced_base10.joblib",
+      "source_metadata_json_pointer": "/model_specs/0/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "202005_SPlite2:decimal15",
+      "anchor_series": "202005_SPlite2",
+      "historical_fold_number": 1,
+      "variant": "decimal15",
+      "runtime_variant": "decimal15",
+      "feature_count": 15,
+      "model_path": "models/frozen/202005_SPlite2/class_balanced_decimal15.joblib",
+      "metadata_path": "models/frozen/202005_SPlite2/class_balanced_decimal15.json",
+      "model_sha256": "0531461db4e148c0305b36a709054ed9f97ed66c76d5ed7503dd55ac87c061ed",
+      "model_bytes": 419904,
+      "metadata_sha256": "8319af6fce5dea454ff026a18526f4cd5e6d76d8f32e57d8bccf806b70c7e2a8",
+      "held_out_identity": [
+        "SRRL",
+        "202005_SPlite2",
+        "c477a7be2945fb8d77f973e6f7fc11ff145af3b46fc2c7284eb48a8fe12c94a8"
+      ],
+      "training_rows": 347,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/202005_SPlite2/class_balanced_decimal15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/202005_SPlite2/class_balanced_decimal15.joblib",
+      "source_metadata_json_pointer": "/model_specs/1/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "202005_SPlite2:residue15",
+      "anchor_series": "202005_SPlite2",
+      "historical_fold_number": 1,
+      "variant": "residue15",
+      "runtime_variant": "residue15",
+      "feature_count": 15,
+      "model_path": "models/frozen/202005_SPlite2/class_balanced_residue15.joblib",
+      "metadata_path": "models/frozen/202005_SPlite2/class_balanced_residue15.json",
+      "model_sha256": "4f9a5870b83a421ca9012225d7a2e231eb27079144fc58d452281771bd1914dd",
+      "model_bytes": 413234,
+      "metadata_sha256": "e8415439fb9203689b72e1b97f871985f141cf26645474ea95da90941600d638",
+      "held_out_identity": [
+        "SRRL",
+        "202005_SPlite2",
+        "c477a7be2945fb8d77f973e6f7fc11ff145af3b46fc2c7284eb48a8fe12c94a8"
+      ],
+      "training_rows": 347,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/202005_SPlite2/class_balanced_residue15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/202005_SPlite2/class_balanced_residue15.joblib",
+      "source_metadata_json_pointer": "/model_specs/2/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "202005_SPlite2:compact20",
+      "anchor_series": "202005_SPlite2",
+      "historical_fold_number": 1,
+      "variant": "compact20",
+      "runtime_variant": "frozen20",
+      "feature_count": 20,
+      "model_path": "models/frozen/202005_SPlite2/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/202005_SPlite2/class_balanced_compact20.json",
+      "model_sha256": "3c2bbc7b95c79d77cdbc514d578ffbeab08efdb02fe20f3bdf51faeba87155b0",
+      "model_bytes": 400404,
+      "metadata_sha256": "29d907e32f8c1c72706ab20ad9ce046678fb6624bd9461abe3614218ea33231a",
+      "held_out_identity": [
+        "SRRL",
+        "202005_SPlite2",
+        "c477a7be2945fb8d77f973e6f7fc11ff145af3b46fc2c7284eb48a8fe12c94a8"
+      ],
+      "training_rows": 347,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/202005_SPlite2/class_balanced_compact20.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/202005_SPlite2/class_balanced_compact20.joblib",
+      "source_metadata_json_pointer": "/model_specs/3/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "202001_SPlite2:base10",
+      "anchor_series": "202001_SPlite2",
+      "historical_fold_number": 2,
+      "variant": "base10",
+      "runtime_variant": "base10",
+      "feature_count": 10,
+      "model_path": "models/frozen/202001_SPlite2/class_balanced_base10.joblib",
+      "metadata_path": "models/frozen/202001_SPlite2/class_balanced_base10.json",
+      "model_sha256": "32bad6d6b0ea05996262bb236c5b78c89c17e14f4efab8e8c454ca53b9969977",
+      "model_bytes": 401498,
+      "metadata_sha256": "5658a3efc6abc5f8d1ae009c781135aaad9eaff5c8fe7e88a8701555692afaae",
+      "held_out_identity": [
+        "SRRL",
+        "202001_SPlite2",
+        "8a3e3284de4932d714999697f3499d38f28b221090b3fc048d139299c8699fc9"
+      ],
+      "training_rows": 359,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/202001_SPlite2/class_balanced_base10.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/202001_SPlite2/class_balanced_base10.joblib",
+      "source_metadata_json_pointer": "/model_specs/4/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "202001_SPlite2:decimal15",
+      "anchor_series": "202001_SPlite2",
+      "historical_fold_number": 2,
+      "variant": "decimal15",
+      "runtime_variant": "decimal15",
+      "feature_count": 15,
+      "model_path": "models/frozen/202001_SPlite2/class_balanced_decimal15.joblib",
+      "metadata_path": "models/frozen/202001_SPlite2/class_balanced_decimal15.json",
+      "model_sha256": "4e39bd76a53a42e85d03173e23cab0de49495deffc8fe3296287022d96547e55",
+      "model_bytes": 399753,
+      "metadata_sha256": "6b67513e872faf02975af44e4cb8e048149f9c810ff745fe0d46eb2ca75dfa84",
+      "held_out_identity": [
+        "SRRL",
+        "202001_SPlite2",
+        "8a3e3284de4932d714999697f3499d38f28b221090b3fc048d139299c8699fc9"
+      ],
+      "training_rows": 359,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/202001_SPlite2/class_balanced_decimal15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/202001_SPlite2/class_balanced_decimal15.joblib",
+      "source_metadata_json_pointer": "/model_specs/5/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "202001_SPlite2:residue15",
+      "anchor_series": "202001_SPlite2",
+      "historical_fold_number": 2,
+      "variant": "residue15",
+      "runtime_variant": "residue15",
+      "feature_count": 15,
+      "model_path": "models/frozen/202001_SPlite2/class_balanced_residue15.joblib",
+      "metadata_path": "models/frozen/202001_SPlite2/class_balanced_residue15.json",
+      "model_sha256": "053045fe7b544a60e62eb3e850a22bfd1373da28c17219c38ad6f7554b3d94e2",
+      "model_bytes": 411810,
+      "metadata_sha256": "73c9b1619bb6b93c045d4ef30d37a49c76cea8a38b3c192073e56c68f1231bdb",
+      "held_out_identity": [
+        "SRRL",
+        "202001_SPlite2",
+        "8a3e3284de4932d714999697f3499d38f28b221090b3fc048d139299c8699fc9"
+      ],
+      "training_rows": 359,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/202001_SPlite2/class_balanced_residue15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/202001_SPlite2/class_balanced_residue15.joblib",
+      "source_metadata_json_pointer": "/model_specs/6/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "202001_SPlite2:compact20",
+      "anchor_series": "202001_SPlite2",
+      "historical_fold_number": 2,
+      "variant": "compact20",
+      "runtime_variant": "frozen20",
+      "feature_count": 20,
+      "model_path": "models/frozen/202001_SPlite2/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/202001_SPlite2/class_balanced_compact20.json",
+      "model_sha256": "4d082bd7b1fd6b0c7b3177168046bd3ffe8354cd807f4ae7792ac4c8a6dcbec8",
+      "model_bytes": 383102,
+      "metadata_sha256": "d5e848de68c8f7d50545b326ed9c71e1ec86e3d5eec10aab36412448a651f5e5",
+      "held_out_identity": [
+        "SRRL",
+        "202001_SPlite2",
+        "8a3e3284de4932d714999697f3499d38f28b221090b3fc048d139299c8699fc9"
+      ],
+      "training_rows": 359,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/202001_SPlite2/class_balanced_compact20.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/202001_SPlite2/class_balanced_compact20.joblib",
+      "source_metadata_json_pointer": "/model_specs/7/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "BT:base10",
+      "anchor_series": "BT",
+      "historical_fold_number": 4,
+      "variant": "base10",
+      "runtime_variant": "base10",
+      "feature_count": 10,
+      "model_path": "models/frozen/BT/class_balanced_base10.joblib",
+      "metadata_path": "models/frozen/BT/class_balanced_base10.json",
+      "model_sha256": "dd6dd0cb81536776ded699648c851544fc8f8faaca6e557e649ec8db11431a56",
+      "model_bytes": 445692,
+      "metadata_sha256": "c297a49cbe54659d1eb998e91941a557aee022204c06354515482893e6611363",
+      "held_out_identity": [
+        "high_precision_float64_20k",
+        "BT",
+        "ffdac991ef9f9bc4318f56c6508e59b4fa772bcaec1a61907fca73e5b37152ac"
+      ],
+      "training_rows": 414,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/BT/class_balanced_base10.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/BT/class_balanced_base10.joblib",
+      "source_metadata_json_pointer": "/model_specs/8/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "BT:decimal15",
+      "anchor_series": "BT",
+      "historical_fold_number": 4,
+      "variant": "decimal15",
+      "runtime_variant": "decimal15",
+      "feature_count": 15,
+      "model_path": "models/frozen/BT/class_balanced_decimal15.joblib",
+      "metadata_path": "models/frozen/BT/class_balanced_decimal15.json",
+      "model_sha256": "470b56eff15a8f0c27dddc5977bbee45c8b2a61c1c385736b9485c160316318e",
+      "model_bytes": 461544,
+      "metadata_sha256": "63078c6eaf7bf1a93ad682a899902834beafac0826648463a66f0b6bef4c4ed9",
+      "held_out_identity": [
+        "high_precision_float64_20k",
+        "BT",
+        "ffdac991ef9f9bc4318f56c6508e59b4fa772bcaec1a61907fca73e5b37152ac"
+      ],
+      "training_rows": 414,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/BT/class_balanced_decimal15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/BT/class_balanced_decimal15.joblib",
+      "source_metadata_json_pointer": "/model_specs/9/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "BT:residue15",
+      "anchor_series": "BT",
+      "historical_fold_number": 4,
+      "variant": "residue15",
+      "runtime_variant": "residue15",
+      "feature_count": 15,
+      "model_path": "models/frozen/BT/class_balanced_residue15.joblib",
+      "metadata_path": "models/frozen/BT/class_balanced_residue15.json",
+      "model_sha256": "797635ab959001c126179d67e2f0745ba352e5597dbdd2547219003ed1eaa695",
+      "model_bytes": 446728,
+      "metadata_sha256": "6c62dbd7f6762d76396b983199182d0ded63e847f520de251d7be3e15519ff1a",
+      "held_out_identity": [
+        "high_precision_float64_20k",
+        "BT",
+        "ffdac991ef9f9bc4318f56c6508e59b4fa772bcaec1a61907fca73e5b37152ac"
+      ],
+      "training_rows": 414,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/BT/class_balanced_residue15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/BT/class_balanced_residue15.joblib",
+      "source_metadata_json_pointer": "/model_specs/10/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "BT:compact20",
+      "anchor_series": "BT",
+      "historical_fold_number": 4,
+      "variant": "compact20",
+      "runtime_variant": "frozen20",
+      "feature_count": 20,
+      "model_path": "models/frozen/BT/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/BT/class_balanced_compact20.json",
+      "model_sha256": "2788bdff7f21b111e264a221ca4309fb3025880a89b191a8c2e0b3297a3a5405",
+      "model_bytes": 429366,
+      "metadata_sha256": "d05291c13d42d0d8382dd01b238db241737c3dc3f72834cf7666ec79e440a42c",
+      "held_out_identity": [
+        "high_precision_float64_20k",
+        "BT",
+        "ffdac991ef9f9bc4318f56c6508e59b4fa772bcaec1a61907fca73e5b37152ac"
+      ],
+      "training_rows": 414,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/BT/class_balanced_compact20.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/BT/class_balanced_compact20.joblib",
+      "source_metadata_json_pointer": "/model_specs/11/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "BM:base10",
+      "anchor_series": "BM",
+      "historical_fold_number": 6,
+      "variant": "base10",
+      "runtime_variant": "base10",
+      "feature_count": 10,
+      "model_path": "models/frozen/BM/class_balanced_base10.joblib",
+      "metadata_path": "models/frozen/BM/class_balanced_base10.json",
+      "model_sha256": "af517815fa3163f9decc17b492890c1a49719e7eb72e85a388288e2b3373ba1a",
+      "model_bytes": 435937,
+      "metadata_sha256": "dc00e0c8e93124f07db3b8053da60eb6d6e5b4ea19f4dd9f18b3f8f70137c900",
+      "held_out_identity": [
+        "high_precision_float64_20k",
+        "BM",
+        "11bc5d17f4045860cdad4201598d26ff1139549629c4a3c087969254f22cb2e4"
+      ],
+      "training_rows": 409,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/BM/class_balanced_base10.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/BM/class_balanced_base10.joblib",
+      "source_metadata_json_pointer": "/model_specs/12/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "BM:decimal15",
+      "anchor_series": "BM",
+      "historical_fold_number": 6,
+      "variant": "decimal15",
+      "runtime_variant": "decimal15",
+      "feature_count": 15,
+      "model_path": "models/frozen/BM/class_balanced_decimal15.joblib",
+      "metadata_path": "models/frozen/BM/class_balanced_decimal15.json",
+      "model_sha256": "9d90b92bf09096a708039e3f83a2efe21aab8bbb9b0b1f60d4396ee587eefe28",
+      "model_bytes": 444848,
+      "metadata_sha256": "578b20151c5e818dc671989aab88e86542c944ad06ecb76c1f949edc010cfe4a",
+      "held_out_identity": [
+        "high_precision_float64_20k",
+        "BM",
+        "11bc5d17f4045860cdad4201598d26ff1139549629c4a3c087969254f22cb2e4"
+      ],
+      "training_rows": 409,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/BM/class_balanced_decimal15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/BM/class_balanced_decimal15.joblib",
+      "source_metadata_json_pointer": "/model_specs/13/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "BM:residue15",
+      "anchor_series": "BM",
+      "historical_fold_number": 6,
+      "variant": "residue15",
+      "runtime_variant": "residue15",
+      "feature_count": 15,
+      "model_path": "models/frozen/BM/class_balanced_residue15.joblib",
+      "metadata_path": "models/frozen/BM/class_balanced_residue15.json",
+      "model_sha256": "991217f02f5040f01930355ad2f289c297891ec809b692842afb5306c67d9c10",
+      "model_bytes": 439518,
+      "metadata_sha256": "ed75aac94bcdd219276746fd09f5e09c8e381b9ce578c9cb676fbe64fea8083e",
+      "held_out_identity": [
+        "high_precision_float64_20k",
+        "BM",
+        "11bc5d17f4045860cdad4201598d26ff1139549629c4a3c087969254f22cb2e4"
+      ],
+      "training_rows": 409,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/BM/class_balanced_residue15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/BM/class_balanced_residue15.joblib",
+      "source_metadata_json_pointer": "/model_specs/14/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "BM:compact20",
+      "anchor_series": "BM",
+      "historical_fold_number": 6,
+      "variant": "compact20",
+      "runtime_variant": "frozen20",
+      "feature_count": 20,
+      "model_path": "models/frozen/BM/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/BM/class_balanced_compact20.json",
+      "model_sha256": "6159d57ca6eec4e309e11a5635afea9f72937ef2ef59347cc7cef5ce6bfd09fe",
+      "model_bytes": 425275,
+      "metadata_sha256": "4462cef58b6aa367770e64c4fb9276468d4e621ee8401f57c37552c794079280",
+      "held_out_identity": [
+        "high_precision_float64_20k",
+        "BM",
+        "11bc5d17f4045860cdad4201598d26ff1139549629c4a3c087969254f22cb2e4"
+      ],
+      "training_rows": 409,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/BM/class_balanced_compact20.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/BM/class_balanced_compact20.joblib",
+      "source_metadata_json_pointer": "/model_specs/15/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "geolife_074_lon:base10",
+      "anchor_series": "geolife_074_lon",
+      "historical_fold_number": 7,
+      "variant": "base10",
+      "runtime_variant": "base10",
+      "feature_count": 10,
+      "model_path": "models/frozen/geolife_074_lon/class_balanced_base10.joblib",
+      "metadata_path": "models/frozen/geolife_074_lon/class_balanced_base10.json",
+      "model_sha256": "2723c7f07752991ac87cc6532f2b2236f16bc65c0ad7d5dfccbd1a2b36fae855",
+      "model_bytes": 406407,
+      "metadata_sha256": "638330b5dd12bbd215b718db929da2d50ca7d06f9f18c44f52b3d75b34bd0865",
+      "held_out_identity": [
+        "derived",
+        "geolife_074_lon",
+        "47455156555aedafc9ca6b1b7ad2c9e1bd49210d742fb37dbd7e0d4d04c8cdcb"
+      ],
+      "training_rows": 403,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/geolife_074_lon/class_balanced_base10.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/geolife_074_lon/class_balanced_base10.joblib",
+      "source_metadata_json_pointer": "/model_specs/16/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "geolife_074_lon:decimal15",
+      "anchor_series": "geolife_074_lon",
+      "historical_fold_number": 7,
+      "variant": "decimal15",
+      "runtime_variant": "decimal15",
+      "feature_count": 15,
+      "model_path": "models/frozen/geolife_074_lon/class_balanced_decimal15.joblib",
+      "metadata_path": "models/frozen/geolife_074_lon/class_balanced_decimal15.json",
+      "model_sha256": "e30c428fa2c842a5c215f301c6d9e625e8565d7feeff4ef40509cf5fb019afed",
+      "model_bytes": 413252,
+      "metadata_sha256": "972eb544bf428eadd8e7d3b2d08164b2bdb278b935bb1bf200aa720183d6540f",
+      "held_out_identity": [
+        "derived",
+        "geolife_074_lon",
+        "47455156555aedafc9ca6b1b7ad2c9e1bd49210d742fb37dbd7e0d4d04c8cdcb"
+      ],
+      "training_rows": 403,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/geolife_074_lon/class_balanced_decimal15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/geolife_074_lon/class_balanced_decimal15.joblib",
+      "source_metadata_json_pointer": "/model_specs/17/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "geolife_074_lon:residue15",
+      "anchor_series": "geolife_074_lon",
+      "historical_fold_number": 7,
+      "variant": "residue15",
+      "runtime_variant": "residue15",
+      "feature_count": 15,
+      "model_path": "models/frozen/geolife_074_lon/class_balanced_residue15.joblib",
+      "metadata_path": "models/frozen/geolife_074_lon/class_balanced_residue15.json",
+      "model_sha256": "b28db1a412c431a2ab90032a00e01c440ef2b038c2d84c292a806ff1403c90a3",
+      "model_bytes": 402764,
+      "metadata_sha256": "367cf862b5d7ae58ec29c777c4ef6a34ecdb334d15ea2b3d832091cfbdbd7880",
+      "held_out_identity": [
+        "derived",
+        "geolife_074_lon",
+        "47455156555aedafc9ca6b1b7ad2c9e1bd49210d742fb37dbd7e0d4d04c8cdcb"
+      ],
+      "training_rows": 403,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/geolife_074_lon/class_balanced_residue15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/geolife_074_lon/class_balanced_residue15.joblib",
+      "source_metadata_json_pointer": "/model_specs/18/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "geolife_074_lon:compact20",
+      "anchor_series": "geolife_074_lon",
+      "historical_fold_number": 7,
+      "variant": "compact20",
+      "runtime_variant": "frozen20",
+      "feature_count": 20,
+      "model_path": "models/frozen/geolife_074_lon/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/geolife_074_lon/class_balanced_compact20.json",
+      "model_sha256": "63d81a515125257961a39b754762a2c29ed47e0726d4a3ea9e1d91059fda12bb",
+      "model_bytes": 393565,
+      "metadata_sha256": "d1bba1133d019fdf55c570254bbc7becc054f9cf341dfc3ff56941823c6875ca",
+      "held_out_identity": [
+        "derived",
+        "geolife_074_lon",
+        "47455156555aedafc9ca6b1b7ad2c9e1bd49210d742fb37dbd7e0d4d04c8cdcb"
+      ],
+      "training_rows": 403,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/geolife_074_lon/class_balanced_compact20.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/geolife_074_lon/class_balanced_compact20.joblib",
+      "source_metadata_json_pointer": "/model_specs/19/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "Kelmarsh_1_power:base10",
+      "anchor_series": "Kelmarsh_1_power",
+      "historical_fold_number": 8,
+      "variant": "base10",
+      "runtime_variant": "base10",
+      "feature_count": 10,
+      "model_path": "models/frozen/Kelmarsh_1_power/class_balanced_base10.joblib",
+      "metadata_path": "models/frozen/Kelmarsh_1_power/class_balanced_base10.json",
+      "model_sha256": "301e20bd0c9b0a3d782df300a33f0f01250ee52d03d2029c4a496dd4d7dfd661",
+      "model_bytes": 451773,
+      "metadata_sha256": "c073dbac06aeb906a3baff5d61e31092d8dfe4c45128fe42f7212b0cbd015a46",
+      "held_out_identity": [
+        "SCADA",
+        "Kelmarsh_1_power",
+        "a3dca0722be5c3804a714fb9601e57238d37800fc03ed50608808d72bc089927"
+      ],
+      "training_rows": 383,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/Kelmarsh_1_power/class_balanced_base10.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/Kelmarsh_1_power/class_balanced_base10.joblib",
+      "source_metadata_json_pointer": "/model_specs/20/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "Kelmarsh_1_power:decimal15",
+      "anchor_series": "Kelmarsh_1_power",
+      "historical_fold_number": 8,
+      "variant": "decimal15",
+      "runtime_variant": "decimal15",
+      "feature_count": 15,
+      "model_path": "models/frozen/Kelmarsh_1_power/class_balanced_decimal15.joblib",
+      "metadata_path": "models/frozen/Kelmarsh_1_power/class_balanced_decimal15.json",
+      "model_sha256": "9c9db7712d625ba102669fd10383d17ce63b498aafa34882ce5113f1bb0fe173",
+      "model_bytes": 485181,
+      "metadata_sha256": "ea6bbb0a8090d0f00925b7e972d42ebfe9413acdf6bfee0a4d86b13ccd64b745",
+      "held_out_identity": [
+        "SCADA",
+        "Kelmarsh_1_power",
+        "a3dca0722be5c3804a714fb9601e57238d37800fc03ed50608808d72bc089927"
+      ],
+      "training_rows": 383,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/Kelmarsh_1_power/class_balanced_decimal15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/Kelmarsh_1_power/class_balanced_decimal15.joblib",
+      "source_metadata_json_pointer": "/model_specs/21/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "Kelmarsh_1_power:residue15",
+      "anchor_series": "Kelmarsh_1_power",
+      "historical_fold_number": 8,
+      "variant": "residue15",
+      "runtime_variant": "residue15",
+      "feature_count": 15,
+      "model_path": "models/frozen/Kelmarsh_1_power/class_balanced_residue15.joblib",
+      "metadata_path": "models/frozen/Kelmarsh_1_power/class_balanced_residue15.json",
+      "model_sha256": "bf44e938f21830b57aae8a534c1d490e4a73d4688c61ab6d4ad662fd8998bc1b",
+      "model_bytes": 471500,
+      "metadata_sha256": "00c91917aeabcab22f9594dfc86cb4462b219bea8f0aff4251ef44a07ac59705",
+      "held_out_identity": [
+        "SCADA",
+        "Kelmarsh_1_power",
+        "a3dca0722be5c3804a714fb9601e57238d37800fc03ed50608808d72bc089927"
+      ],
+      "training_rows": 383,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/Kelmarsh_1_power/class_balanced_residue15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/Kelmarsh_1_power/class_balanced_residue15.joblib",
+      "source_metadata_json_pointer": "/model_specs/22/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "Kelmarsh_1_power:compact20",
+      "anchor_series": "Kelmarsh_1_power",
+      "historical_fold_number": 8,
+      "variant": "compact20",
+      "runtime_variant": "frozen20",
+      "feature_count": 20,
+      "model_path": "models/frozen/Kelmarsh_1_power/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/Kelmarsh_1_power/class_balanced_compact20.json",
+      "model_sha256": "453d3ee9a6b07fac59519348e257ce55af57f1a087a1a05c0dca7faa169dad30",
+      "model_bytes": 460490,
+      "metadata_sha256": "75984adb0b567eed2ed3369f5463ba0faf2c75f2c4f26f5b177af2896865f648",
+      "held_out_identity": [
+        "SCADA",
+        "Kelmarsh_1_power",
+        "a3dca0722be5c3804a714fb9601e57238d37800fc03ed50608808d72bc089927"
+      ],
+      "training_rows": 383,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/Kelmarsh_1_power/class_balanced_compact20.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/Kelmarsh_1_power/class_balanced_compact20.joblib",
+      "source_metadata_json_pointer": "/model_specs/23/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "ais_20200801_20200815_366932970_sog:base10",
+      "anchor_series": "ais_20200801_20200815_366932970_sog",
+      "historical_fold_number": 9,
+      "variant": "base10",
+      "runtime_variant": "base10",
+      "feature_count": 10,
+      "model_path": "models/frozen/ais_20200801_20200815_366932970_sog/class_balanced_base10.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_366932970_sog/class_balanced_base10.json",
+      "model_sha256": "185a54d6a8f6ee87b7f0443bc0a9b20b926439a13d63b4ca07da711e06b748ae",
+      "model_bytes": 463174,
+      "metadata_sha256": "dc6825895434bfcd48393c0c523f6732e3a716cdc352cbdf35486cfa36004815",
+      "held_out_identity": [
+        "AIS",
+        "ais_20200801_20200815_366932970_sog",
+        "df1b3e052cfc957d4086c6f297654de2c164b4fff9196ef232f5d836b78317c3"
+      ],
+      "training_rows": 418,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_366932970_sog/class_balanced_base10.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_366932970_sog/class_balanced_base10.joblib",
+      "source_metadata_json_pointer": "/model_specs/24/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "ais_20200801_20200815_366932970_sog:decimal15",
+      "anchor_series": "ais_20200801_20200815_366932970_sog",
+      "historical_fold_number": 9,
+      "variant": "decimal15",
+      "runtime_variant": "decimal15",
+      "feature_count": 15,
+      "model_path": "models/frozen/ais_20200801_20200815_366932970_sog/class_balanced_decimal15.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_366932970_sog/class_balanced_decimal15.json",
+      "model_sha256": "e69653cd4125ffa38b2d805d4d07671db383aff5f7d99db03da199442452993b",
+      "model_bytes": 474663,
+      "metadata_sha256": "885258ee089b1f5890a9e4e1b373175d97ae2a811410a3232061455dff70c4f4",
+      "held_out_identity": [
+        "AIS",
+        "ais_20200801_20200815_366932970_sog",
+        "df1b3e052cfc957d4086c6f297654de2c164b4fff9196ef232f5d836b78317c3"
+      ],
+      "training_rows": 418,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/ais_20200801_20200815_366932970_sog/class_balanced_decimal15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/ais_20200801_20200815_366932970_sog/class_balanced_decimal15.joblib",
+      "source_metadata_json_pointer": "/model_specs/25/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "ais_20200801_20200815_366932970_sog:residue15",
+      "anchor_series": "ais_20200801_20200815_366932970_sog",
+      "historical_fold_number": 9,
+      "variant": "residue15",
+      "runtime_variant": "residue15",
+      "feature_count": 15,
+      "model_path": "models/frozen/ais_20200801_20200815_366932970_sog/class_balanced_residue15.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_366932970_sog/class_balanced_residue15.json",
+      "model_sha256": "490d5ea06c445c630becadb6bac010058e30e5610b5fd09abe33be1ecb298a93",
+      "model_bytes": 473572,
+      "metadata_sha256": "a64654a0202aa5b79cf71f33e61c3dfa26f8c7aeb6320a5b42816d25c1cad006",
+      "held_out_identity": [
+        "AIS",
+        "ais_20200801_20200815_366932970_sog",
+        "df1b3e052cfc957d4086c6f297654de2c164b4fff9196ef232f5d836b78317c3"
+      ],
+      "training_rows": 418,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/ais_20200801_20200815_366932970_sog/class_balanced_residue15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/ais_20200801_20200815_366932970_sog/class_balanced_residue15.joblib",
+      "source_metadata_json_pointer": "/model_specs/26/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "ais_20200801_20200815_366932970_sog:compact20",
+      "anchor_series": "ais_20200801_20200815_366932970_sog",
+      "historical_fold_number": 9,
+      "variant": "compact20",
+      "runtime_variant": "frozen20",
+      "feature_count": 20,
+      "model_path": "models/frozen/ais_20200801_20200815_366932970_sog/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_366932970_sog/class_balanced_compact20.json",
+      "model_sha256": "ddac0905150c24fa6a41867e9905ee0bc43439c72586414de2a004e3425bab4a",
+      "model_bytes": 446439,
+      "metadata_sha256": "c0a59e587ff506502d80b9f20ad9b6becbeb474545e08d099ea4bd2103e9b4b5",
+      "held_out_identity": [
+        "AIS",
+        "ais_20200801_20200815_366932970_sog",
+        "df1b3e052cfc957d4086c6f297654de2c164b4fff9196ef232f5d836b78317c3"
+      ],
+      "training_rows": 418,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_366932970_sog/class_balanced_compact20.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_366932970_sog/class_balanced_compact20.joblib",
+      "source_metadata_json_pointer": "/model_specs/27/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "ais_20200801_20200815_366934290_sog:base10",
+      "anchor_series": "ais_20200801_20200815_366934290_sog",
+      "historical_fold_number": 10,
+      "variant": "base10",
+      "runtime_variant": "base10",
+      "feature_count": 10,
+      "model_path": "models/frozen/ais_20200801_20200815_366934290_sog/class_balanced_base10.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_366934290_sog/class_balanced_base10.json",
+      "model_sha256": "ed95d88e8c9306f48048d22dbd11809041e9aa11c88b7c6b5d4a300e10c739b7",
+      "model_bytes": 442626,
+      "metadata_sha256": "8de9d574631bac70f30cf5f07e9977825528cc742e39e1c122258e25a75ee5a8",
+      "held_out_identity": [
+        "AIS",
+        "ais_20200801_20200815_366934290_sog",
+        "166c0b753f1fdc42c7a56bd22eac5f7c9c99b611488238581be2533100f8f8a3"
+      ],
+      "training_rows": 416,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_366934290_sog/class_balanced_base10.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_366934290_sog/class_balanced_base10.joblib",
+      "source_metadata_json_pointer": "/model_specs/28/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "ais_20200801_20200815_366934290_sog:decimal15",
+      "anchor_series": "ais_20200801_20200815_366934290_sog",
+      "historical_fold_number": 10,
+      "variant": "decimal15",
+      "runtime_variant": "decimal15",
+      "feature_count": 15,
+      "model_path": "models/frozen/ais_20200801_20200815_366934290_sog/class_balanced_decimal15.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_366934290_sog/class_balanced_decimal15.json",
+      "model_sha256": "a23d88a11539c9c70e7721aab5708f45da9c93a1dc981b31bece3c1bdc83b764",
+      "model_bytes": 455241,
+      "metadata_sha256": "3582acd3685f29818896cb45b8c4dcfc39bc39fdd7b6cd8de0e6c401020498c4",
+      "held_out_identity": [
+        "AIS",
+        "ais_20200801_20200815_366934290_sog",
+        "166c0b753f1fdc42c7a56bd22eac5f7c9c99b611488238581be2533100f8f8a3"
+      ],
+      "training_rows": 416,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/ais_20200801_20200815_366934290_sog/class_balanced_decimal15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/ais_20200801_20200815_366934290_sog/class_balanced_decimal15.joblib",
+      "source_metadata_json_pointer": "/model_specs/29/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "ais_20200801_20200815_366934290_sog:residue15",
+      "anchor_series": "ais_20200801_20200815_366934290_sog",
+      "historical_fold_number": 10,
+      "variant": "residue15",
+      "runtime_variant": "residue15",
+      "feature_count": 15,
+      "model_path": "models/frozen/ais_20200801_20200815_366934290_sog/class_balanced_residue15.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_366934290_sog/class_balanced_residue15.json",
+      "model_sha256": "f09ec8338cf4d9b45e46156821423bf00df1c356bba7e59d5efee886dbb7dcaf",
+      "model_bytes": 447165,
+      "metadata_sha256": "6f1ceb1e69854ae65eba3d577b9b0b08607759630e72ee33c14c7303527125cb",
+      "held_out_identity": [
+        "AIS",
+        "ais_20200801_20200815_366934290_sog",
+        "166c0b753f1fdc42c7a56bd22eac5f7c9c99b611488238581be2533100f8f8a3"
+      ],
+      "training_rows": 416,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/ais_20200801_20200815_366934290_sog/class_balanced_residue15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/ais_20200801_20200815_366934290_sog/class_balanced_residue15.joblib",
+      "source_metadata_json_pointer": "/model_specs/30/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "ais_20200801_20200815_366934290_sog:compact20",
+      "anchor_series": "ais_20200801_20200815_366934290_sog",
+      "historical_fold_number": 10,
+      "variant": "compact20",
+      "runtime_variant": "frozen20",
+      "feature_count": 20,
+      "model_path": "models/frozen/ais_20200801_20200815_366934290_sog/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_366934290_sog/class_balanced_compact20.json",
+      "model_sha256": "945b8f5cfa75220b08a9a8e4e9502ebc00854e51d69c243b8a1b07467ff77f8b",
+      "model_bytes": 429187,
+      "metadata_sha256": "34ed2ab3d476dc97b801960149edb28590684dce305bb633138164d768a552cc",
+      "held_out_identity": [
+        "AIS",
+        "ais_20200801_20200815_366934290_sog",
+        "166c0b753f1fdc42c7a56bd22eac5f7c9c99b611488238581be2533100f8f8a3"
+      ],
+      "training_rows": 416,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_366934290_sog/class_balanced_compact20.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_366934290_sog/class_balanced_compact20.joblib",
+      "source_metadata_json_pointer": "/model_specs/31/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "ais_20200801_20200815_367690430_sog:base10",
+      "anchor_series": "ais_20200801_20200815_367690430_sog",
+      "historical_fold_number": 11,
+      "variant": "base10",
+      "runtime_variant": "base10",
+      "feature_count": 10,
+      "model_path": "models/frozen/ais_20200801_20200815_367690430_sog/class_balanced_base10.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_367690430_sog/class_balanced_base10.json",
+      "model_sha256": "5f6fea92facf4a241c78a07b79eb30bcdf515d5666999180c467fb80e03b0e80",
+      "model_bytes": 451271,
+      "metadata_sha256": "c31bf53e1b7c1c4dff6f3d6ad286c1463c4ef0211d9012b945e213333401616a",
+      "held_out_identity": [
+        "AIS",
+        "ais_20200801_20200815_367690430_sog",
+        "460e6f8bf91250159d04163af4a8c114c82b46a32d33f33ee6805da295ae0bf6"
+      ],
+      "training_rows": 422,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_367690430_sog/class_balanced_base10.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_367690430_sog/class_balanced_base10.joblib",
+      "source_metadata_json_pointer": "/model_specs/32/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "ais_20200801_20200815_367690430_sog:decimal15",
+      "anchor_series": "ais_20200801_20200815_367690430_sog",
+      "historical_fold_number": 11,
+      "variant": "decimal15",
+      "runtime_variant": "decimal15",
+      "feature_count": 15,
+      "model_path": "models/frozen/ais_20200801_20200815_367690430_sog/class_balanced_decimal15.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_367690430_sog/class_balanced_decimal15.json",
+      "model_sha256": "49ec999f5b5e382edc3936c84124befe83caecff08944e7fd75e7c9a3094cf1c",
+      "model_bytes": 465432,
+      "metadata_sha256": "27748a2731ebaed7813bb11807e0a1eedd82e71cbe635bedbf9608822a9efd8f",
+      "held_out_identity": [
+        "AIS",
+        "ais_20200801_20200815_367690430_sog",
+        "460e6f8bf91250159d04163af4a8c114c82b46a32d33f33ee6805da295ae0bf6"
+      ],
+      "training_rows": 422,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/ais_20200801_20200815_367690430_sog/class_balanced_decimal15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/ais_20200801_20200815_367690430_sog/class_balanced_decimal15.joblib",
+      "source_metadata_json_pointer": "/model_specs/33/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "ais_20200801_20200815_367690430_sog:residue15",
+      "anchor_series": "ais_20200801_20200815_367690430_sog",
+      "historical_fold_number": 11,
+      "variant": "residue15",
+      "runtime_variant": "residue15",
+      "feature_count": 15,
+      "model_path": "models/frozen/ais_20200801_20200815_367690430_sog/class_balanced_residue15.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_367690430_sog/class_balanced_residue15.json",
+      "model_sha256": "9b95b2a1e24955a7069ff3b53531ae8aa9f927405611134c211f187ff38b9545",
+      "model_bytes": 463168,
+      "metadata_sha256": "7f06f37d95f5fd4f3a8e752a76e00d046df5d5454d9d448d57ca7108b1a35389",
+      "held_out_identity": [
+        "AIS",
+        "ais_20200801_20200815_367690430_sog",
+        "460e6f8bf91250159d04163af4a8c114c82b46a32d33f33ee6805da295ae0bf6"
+      ],
+      "training_rows": 422,
+      "original_model_path": "/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/ais_20200801_20200815_367690430_sog/class_balanced_residue15.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/paper_mainline_20261028_144805_NJEv3Zmc/policies/models/ais_20200801_20200815_367690430_sog/class_balanced_residue15.joblib",
+      "source_metadata_json_pointer": "/model_specs/34/metadata",
+      "weights_changed": false,
+      "refit": false
+    },
+    {
+      "id": "ais_20200801_20200815_367690430_sog:compact20",
+      "anchor_series": "ais_20200801_20200815_367690430_sog",
+      "historical_fold_number": 11,
+      "variant": "compact20",
+      "runtime_variant": "frozen20",
+      "feature_count": 20,
+      "model_path": "models/frozen/ais_20200801_20200815_367690430_sog/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_367690430_sog/class_balanced_compact20.json",
+      "model_sha256": "52c7f0bc83245e700158fbf57f1e11b542ae18fbd8c388809c560037348c001c",
+      "model_bytes": 432494,
+      "metadata_sha256": "d67aaf609b66a4f4e2ab85e98c9f53ec6e2f97b3cfc5243a28858dad0d6779c6",
+      "held_out_identity": [
+        "AIS",
+        "ais_20200801_20200815_367690430_sog",
+        "460e6f8bf91250159d04163af4a8c114c82b46a32d33f33ee6805da295ae0bf6"
+      ],
+      "training_rows": 422,
+      "original_model_path": "/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_367690430_sog/class_balanced_compact20.joblib",
+      "original_archive_member": "frozen/absolute/root/compression_experiment_results/selector_balance_20261027_204928_46134/ais_20200801_20200815_367690430_sog/class_balanced_compact20.joblib",
+      "source_metadata_json_pointer": "/model_specs/35/metadata",
+      "weights_changed": false,
+      "refit": false
+    }
+  ],
+  "input_model_routing": [
+    {
+      "canonical_name": "202005_SPlite2",
+      "input_sha256": "c477a7be2945fb8d77f973e6f7fc11ff145af3b46fc2c7284eb48a8fe12c94a8",
+      "values": 44640,
+      "cohort": "main12",
+      "anchor_series": "202005_SPlite2",
+      "historical_fold_number": 1,
+      "external_model_reuse": false,
+      "primary_model_id": "202005_SPlite2:compact20",
+      "model_path": "models/frozen/202005_SPlite2/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/202005_SPlite2/class_balanced_compact20.json"
+    },
+    {
+      "canonical_name": "202001_SPlite2",
+      "input_sha256": "8a3e3284de4932d714999697f3499d38f28b221090b3fc048d139299c8699fc9",
+      "values": 44640,
+      "cohort": "main12",
+      "anchor_series": "202001_SPlite2",
+      "historical_fold_number": 2,
+      "external_model_reuse": false,
+      "primary_model_id": "202001_SPlite2:compact20",
+      "model_path": "models/frozen/202001_SPlite2/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/202001_SPlite2/class_balanced_compact20.json"
+    },
+    {
+      "canonical_name": "BT",
+      "input_sha256": "ffdac991ef9f9bc4318f56c6508e59b4fa772bcaec1a61907fca73e5b37152ac",
+      "values": 20000,
+      "cohort": "main12",
+      "anchor_series": "BT",
+      "historical_fold_number": 4,
+      "external_model_reuse": false,
+      "primary_model_id": "BT:compact20",
+      "model_path": "models/frozen/BT/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/BT/class_balanced_compact20.json"
+    },
+    {
+      "canonical_name": "BM",
+      "input_sha256": "11bc5d17f4045860cdad4201598d26ff1139549629c4a3c087969254f22cb2e4",
+      "values": 17964,
+      "cohort": "main12",
+      "anchor_series": "BM",
+      "historical_fold_number": 6,
+      "external_model_reuse": false,
+      "primary_model_id": "BM:compact20",
+      "model_path": "models/frozen/BM/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/BM/class_balanced_compact20.json"
+    },
+    {
+      "canonical_name": "geolife_074_lon",
+      "input_sha256": "47455156555aedafc9ca6b1b7ad2c9e1bd49210d742fb37dbd7e0d4d04c8cdcb",
+      "values": 20000,
+      "cohort": "main12",
+      "anchor_series": "geolife_074_lon",
+      "historical_fold_number": 7,
+      "external_model_reuse": false,
+      "primary_model_id": "geolife_074_lon:compact20",
+      "model_path": "models/frozen/geolife_074_lon/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/geolife_074_lon/class_balanced_compact20.json"
+    },
+    {
+      "canonical_name": "Kelmarsh_1_power",
+      "input_sha256": "a3dca0722be5c3804a714fb9601e57238d37800fc03ed50608808d72bc089927",
+      "values": 52477,
+      "cohort": "main12",
+      "anchor_series": "Kelmarsh_1_power",
+      "historical_fold_number": 8,
+      "external_model_reuse": false,
+      "primary_model_id": "Kelmarsh_1_power:compact20",
+      "model_path": "models/frozen/Kelmarsh_1_power/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/Kelmarsh_1_power/class_balanced_compact20.json"
+    },
+    {
+      "canonical_name": "ais_20200801_20200815_366932970_sog",
+      "input_sha256": "df1b3e052cfc957d4086c6f297654de2c164b4fff9196ef232f5d836b78317c3",
+      "values": 18694,
+      "cohort": "main12",
+      "anchor_series": "ais_20200801_20200815_366932970_sog",
+      "historical_fold_number": 9,
+      "external_model_reuse": false,
+      "primary_model_id": "ais_20200801_20200815_366932970_sog:compact20",
+      "model_path": "models/frozen/ais_20200801_20200815_366932970_sog/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_366932970_sog/class_balanced_compact20.json"
+    },
+    {
+      "canonical_name": "ais_20200801_20200815_366934290_sog",
+      "input_sha256": "166c0b753f1fdc42c7a56bd22eac5f7c9c99b611488238581be2533100f8f8a3",
+      "values": 18304,
+      "cohort": "main12",
+      "anchor_series": "ais_20200801_20200815_366934290_sog",
+      "historical_fold_number": 10,
+      "external_model_reuse": false,
+      "primary_model_id": "ais_20200801_20200815_366934290_sog:compact20",
+      "model_path": "models/frozen/ais_20200801_20200815_366934290_sog/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_366934290_sog/class_balanced_compact20.json"
+    },
+    {
+      "canonical_name": "ais_20200801_20200815_367690430_sog",
+      "input_sha256": "460e6f8bf91250159d04163af4a8c114c82b46a32d33f33ee6805da295ae0bf6",
+      "values": 18263,
+      "cohort": "main12",
+      "anchor_series": "ais_20200801_20200815_367690430_sog",
+      "historical_fold_number": 11,
+      "external_model_reuse": false,
+      "primary_model_id": "ais_20200801_20200815_367690430_sog:compact20",
+      "model_path": "models/frozen/ais_20200801_20200815_367690430_sog/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/ais_20200801_20200815_367690430_sog/class_balanced_compact20.json"
+    },
+    {
+      "canonical_name": "CamelMonitor_CPU",
+      "input_sha256": "b75b5589ff0edf8e126981349f268c7c53bddb91c76a13032a5d66b0b6522838",
+      "values": 100000,
+      "cohort": "main12",
+      "anchor_series": "202005_SPlite2",
+      "historical_fold_number": 1,
+      "external_model_reuse": true,
+      "primary_model_id": "202005_SPlite2:compact20",
+      "model_path": "models/frozen/202005_SPlite2/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/202005_SPlite2/class_balanced_compact20.json"
+    },
+    {
+      "canonical_name": "CamelMonitor_Disk",
+      "input_sha256": "246f1b3344690d29be9dc113e2491cda6d005d0fcd60d96e6ab6cedb8fa1eeb3",
+      "values": 92213,
+      "cohort": "main12",
+      "anchor_series": "202005_SPlite2",
+      "historical_fold_number": 1,
+      "external_model_reuse": true,
+      "primary_model_id": "202005_SPlite2:compact20",
+      "model_path": "models/frozen/202005_SPlite2/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/202005_SPlite2/class_balanced_compact20.json"
+    },
+    {
+      "canonical_name": "BIDMC_01_PLETH",
+      "input_sha256": "2cc6180d4e423b648a9cb247a87dd41d8ad9b96fd04ec5b1d81b4227870ae1f3",
+      "values": 60001,
+      "cohort": "main12",
+      "anchor_series": "202005_SPlite2",
+      "historical_fold_number": 1,
+      "external_model_reuse": true,
+      "primary_model_id": "202005_SPlite2:compact20",
+      "model_path": "models/frozen/202005_SPlite2/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/202005_SPlite2/class_balanced_compact20.json"
+    },
+    {
+      "canonical_name": "BIDMC_03_PLETH",
+      "input_sha256": "bd837530ff394ac8fbfcccf4f38db011d510c90d651e00cb798ba1fdd0b513a7",
+      "values": 60001,
+      "cohort": "bidmc03_auxiliary",
+      "anchor_series": "202005_SPlite2",
+      "historical_fold_number": 1,
+      "external_model_reuse": true,
+      "primary_model_id": "202005_SPlite2:compact20",
+      "model_path": "models/frozen/202005_SPlite2/class_balanced_compact20.joblib",
+      "metadata_path": "models/frozen/202005_SPlite2/class_balanced_compact20.json"
+    }
+  ],
+  "ae4": [
+    {
+      "canonical_name": "202005_SPlite2",
+      "anchor_series": "202005_SPlite2",
+      "variants": {
+        "base10": {
+          "model_id": "202005_SPlite2:base10",
+          "model_path": "models/frozen/202005_SPlite2/class_balanced_base10.joblib",
+          "metadata_path": "models/frozen/202005_SPlite2/class_balanced_base10.json"
+        },
+        "decimal15": {
+          "model_id": "202005_SPlite2:decimal15",
+          "model_path": "models/frozen/202005_SPlite2/class_balanced_decimal15.joblib",
+          "metadata_path": "models/frozen/202005_SPlite2/class_balanced_decimal15.json"
+        },
+        "residue15": {
+          "model_id": "202005_SPlite2:residue15",
+          "model_path": "models/frozen/202005_SPlite2/class_balanced_residue15.joblib",
+          "metadata_path": "models/frozen/202005_SPlite2/class_balanced_residue15.json"
+        },
+        "compact20": {
+          "model_id": "202005_SPlite2:compact20",
+          "model_path": "models/frozen/202005_SPlite2/class_balanced_compact20.joblib",
+          "metadata_path": "models/frozen/202005_SPlite2/class_balanced_compact20.json"
+        }
+      }
+    },
+    {
+      "canonical_name": "BT",
+      "anchor_series": "BT",
+      "variants": {
+        "base10": {
+          "model_id": "BT:base10",
+          "model_path": "models/frozen/BT/class_balanced_base10.joblib",
+          "metadata_path": "models/frozen/BT/class_balanced_base10.json"
+        },
+        "decimal15": {
+          "model_id": "BT:decimal15",
+          "model_path": "models/frozen/BT/class_balanced_decimal15.joblib",
+          "metadata_path": "models/frozen/BT/class_balanced_decimal15.json"
+        },
+        "residue15": {
+          "model_id": "BT:residue15",
+          "model_path": "models/frozen/BT/class_balanced_residue15.joblib",
+          "metadata_path": "models/frozen/BT/class_balanced_residue15.json"
+        },
+        "compact20": {
+          "model_id": "BT:compact20",
+          "model_path": "models/frozen/BT/class_balanced_compact20.joblib",
+          "metadata_path": "models/frozen/BT/class_balanced_compact20.json"
+        }
+      }
+    },
+    {
+      "canonical_name": "BM",
+      "anchor_series": "BM",
+      "variants": {
+        "base10": {
+          "model_id": "BM:base10",
+          "model_path": "models/frozen/BM/class_balanced_base10.joblib",
+          "metadata_path": "models/frozen/BM/class_balanced_base10.json"
+        },
+        "decimal15": {
+          "model_id": "BM:decimal15",
+          "model_path": "models/frozen/BM/class_balanced_decimal15.joblib",
+          "metadata_path": "models/frozen/BM/class_balanced_decimal15.json"
+        },
+        "residue15": {
+          "model_id": "BM:residue15",
+          "model_path": "models/frozen/BM/class_balanced_residue15.joblib",
+          "metadata_path": "models/frozen/BM/class_balanced_residue15.json"
+        },
+        "compact20": {
+          "model_id": "BM:compact20",
+          "model_path": "models/frozen/BM/class_balanced_compact20.joblib",
+          "metadata_path": "models/frozen/BM/class_balanced_compact20.json"
+        }
+      }
+    },
+    {
+      "canonical_name": "geolife_074_lon",
+      "anchor_series": "geolife_074_lon",
+      "variants": {
+        "base10": {
+          "model_id": "geolife_074_lon:base10",
+          "model_path": "models/frozen/geolife_074_lon/class_balanced_base10.joblib",
+          "metadata_path": "models/frozen/geolife_074_lon/class_balanced_base10.json"
+        },
+        "decimal15": {
+          "model_id": "geolife_074_lon:decimal15",
+          "model_path": "models/frozen/geolife_074_lon/class_balanced_decimal15.joblib",
+          "metadata_path": "models/frozen/geolife_074_lon/class_balanced_decimal15.json"
+        },
+        "residue15": {
+          "model_id": "geolife_074_lon:residue15",
+          "model_path": "models/frozen/geolife_074_lon/class_balanced_residue15.joblib",
+          "metadata_path": "models/frozen/geolife_074_lon/class_balanced_residue15.json"
+        },
+        "compact20": {
+          "model_id": "geolife_074_lon:compact20",
+          "model_path": "models/frozen/geolife_074_lon/class_balanced_compact20.joblib",
+          "metadata_path": "models/frozen/geolife_074_lon/class_balanced_compact20.json"
+        }
+      }
+    }
+  ],
+  "experiment_inputs_path": "docs/experiment_inputs.json",
+  "experiment_inputs_sha256": "5fd9acea70c888ec5aaea3616456468cc833534f06bb860787cf3c27accc55a7",
+  "raw_inputs_bundled": false,
+  "native_binaries_bundled": false,
+  "notes": [
+    "The nine historical retained-series anchors keep their own leave-one-series-out folds.",
+    "CamelMonitor CPU/Disk and BIDMC01/03 reuse the original May anchor; no new fold is trained.",
+    "Original eleven-source training provenance still includes household energy and BW even though these two are not in the thirteen-source evaluation cohort.",
+    "AE historical runtime name frozen20 maps to feature variant compact20.",
+    "SHA checks authenticate archived bytes but do not make arbitrary joblib/pickle inputs safe. Only deserialize trusted weights."
+  ]
+}
