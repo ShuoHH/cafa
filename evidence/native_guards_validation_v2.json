@@ -1,0 +1,222 @@
+{
+  "version": "strict8_current_native_wrapper_validation_v2",
+  "all_passed": true,
+  "build_and_selftest_receipts": [
+    {
+      "stage": "build_framed",
+      "argv": [
+        "bash",
+        "/root/autodl-tmp/cacf_release_validation_20261112_v1/native_source/harness/build_framed_plan.sh"
+      ],
+      "exit_code": 0,
+      "seconds": 25.426
+    },
+    {
+      "stage": "build_fixed_wrapper",
+      "argv": [
+        "/usr/bin/g++-13",
+        "-pthread",
+        "-g",
+        "-O3",
+        "-DNDEBUG",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-march=native",
+        "-Wno-unused-parameter",
+        "-std=gnu++17",
+        "-I/root/compression_experiment_code/class_flat_pool_20261026_182413_68906/native_build/native/fixed_source/btrblocks",
+        "-isystem",
+        "/root/compression_experiment_code/class_flat_pool_20261026_182413_68906/native_build/offline/offline_vendor/fsst",
+        "-isystem",
+        "/root/compression_experiment_code/class_flat_pool_20261026_182413_68906/native_build/offline/offline_vendor/fastpfor",
+        "-isystem",
+        "/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/croaring/include",
+        "-isystem",
+        "/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/boost/boost_src-src/libs/dynamic_bitset/include",
+        "-isystem",
+        "/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/boost/boost_src-src/libs/assert/include",
+        "-isystem",
+        "/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/boost/boost_src-src/libs/config/include",
+        "-isystem",
+        "/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/boost/boost_src-src/libs/container_hash/include",
+        "-isystem",
+        "/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/boost/boost_src-src/libs/describe/include",
+        "-isystem",
+        "/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/boost/boost_src-src/libs/mp11/include",
+        "-isystem",
+        "/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/boost/boost_src-src/libs/type_traits/include",
+        "-isystem",
+        "/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/boost/boost_src-src/libs/static_assert/include",
+        "-isystem",
+        "/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/boost/boost_src-src/libs/core/include",
+        "-isystem",
+        "/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/boost/boost_src-src/libs/throw_exception/include",
+        "-isystem",
+        "/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/boost/boost_src-src/libs/integer/include",
+        "-isystem",
+        "/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/boost/boost_src-src/libs/move/include",
+        "/root/autodl-tmp/cacf_release_validation_20261112_v1/native_source/harness/external_baselines/btrblocks_fixed/fixed_btr.cpp",
+        "-o",
+        "/root/autodl-tmp/cacf_release_validation_20261112_v1/BtrBlocksFixed_strict8",
+        "-Wl,-rpath,/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/croaring/lib",
+        "/root/compression_experiment_code/class_flat_pool_20261026_182413_68906/native_build/native/libbtrblocks.a",
+        "/root/compression_experiment_code/class_flat_pool_20261026_182413_68906/native_build/native/vendor/cwida/fsst/src/fsst_src-build/libfsst.a",
+        "/root/compression_experiment_code/class_flat_pool_20261026_182413_68906/native_build/native/vendor/lemire/fastpfor/src/fastpfor_src-build/libFastPFOR.a",
+        "/root/autodl-tmp/codebase/NeaTS-main/experiment_results/external_native_build_cache_v3/btrblocks/vendor/croaring/lib/libroaring.so"
+      ],
+      "exit_code": 0,
+      "seconds": 4.621
+    },
+    {
+      "stage": "framed_selftest",
+      "argv": [
+        "/root/autodl-tmp/cacf_release_validation_20261112_v1/build_framed/FrozenPlanFile",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 0.008
+    },
+    {
+      "stage": "fixed_selftest",
+      "argv": [
+        "/root/autodl-tmp/cacf_release_validation_20261112_v1/BtrBlocksFixed_strict8",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 0.016
+    }
+  ],
+  "fresh_roundtrips": [
+    {
+      "stage": "whole",
+      "exit_code": 0,
+      "seconds": 2.067,
+      "report": {
+        "scope": "whole-series frozen Top-2 native compression and independent decode",
+        "adaptive_segmentation_ran": false,
+        "dp_ran": false,
+        "input": "/root/autodl-tmp/cacf_release_validation_20261112_v1/source/examples/data/synthetic_1024.f64le",
+        "values": 1024,
+        "input_sha256": "c7d8eaf15e384f31378580ced134a3edfc953515577216edcc193e6722812f81",
+        "complete_file_bits": 31096,
+        "selected_codecs": [
+          "alp"
+        ],
+        "stored_file": "/root/autodl-tmp/cacf_release_validation_20261112_v1/retry2_whole/compression/final.f64pool",
+        "stored_sha256": "261175ac76ce974136c6bbf80863b2fe6b0652cde1e4c4745bbea66c9c138f5a",
+        "decoded_file": "/root/autodl-tmp/cacf_release_validation_20261112_v1/retry2_whole/decoded.f64le",
+        "decoded_sha256": "c7d8eaf15e384f31378580ced134a3edfc953515577216edcc193e6722812f81",
+        "bitwise_identical": true,
+        "frozen_model_sha256": "3c2bbc7b95c79d77cdbc514d578ffbeab08efdb02fe20f3bdf51faeba87155b0"
+      }
+    },
+    {
+      "stage": "adaptive",
+      "exit_code": 0,
+      "seconds": 70.987,
+      "report": {
+        "version": "cacf_public_strict8_shared_adaptive_example_v2",
+        "scope": "fresh adaptive compression + independent decode",
+        "historical_replay": false,
+        "paper_timing_claim": false,
+        "paper_byte_identity_claim": false,
+        "active_actions": [
+          "gorilla",
+          "chimp",
+          "chimp128",
+          "tsxor",
+          "rle+tsxor",
+          "alp",
+          "btr_dict_bp",
+          "btr_decimal_fixed"
+        ],
+        "strict8_at_all_stages": true,
+        "shared_feature_bank_for_boundary_and_selection": true,
+        "boundary_resumed": false,
+        "boundary_source_manifest": null,
+        "boundary_source_manifest_sha256": null,
+        "boundary_independently_decoded_on_resume": false,
+        "boundary_source_native_identity_recorded": true,
+        "input": "/root/autodl-tmp/cacf_release_validation_20261112_v1/source/examples/data/synthetic_8192.f64le",
+        "values": 8192,
+        "input_sha256": "c89a123d256bf4419562733ed4ae25bcc99b98a6acaa89a13421cecabd1dc8d2",
+        "boundary_initial_segments": 4,
+        "boundary_repaired_segments": 5,
+        "boundary_repaired_bits": 258536,
+        "final_segments": 4,
+        "final_complete_file_bits": 285144,
+        "dp_full_pricing_complete": true,
+        "dp_budget_limited": false,
+        "dp_priced_edges": 15,
+        "dp_possible_edges": 15,
+        "selected_codecs": [
+          "chimp128",
+          "rle+tsxor",
+          "gorilla",
+          "gorilla"
+        ],
+        "stored_file": "/root/autodl-tmp/cacf_release_validation_20261112_v1/retry2_adaptive/dp/after_dp.f64pool",
+        "stored_sha256": "dbd77cd55ca6ecfa8c7877903884b1a088297fc43851f3f6717e020bf814a92e",
+        "decoded_file": "/root/autodl-tmp/cacf_release_validation_20261112_v1/retry2_adaptive/decoded.f64le",
+        "decoded_sha256": "c89a123d256bf4419562733ed4ae25bcc99b98a6acaa89a13421cecabd1dc8d2",
+        "bitwise_identical": true,
+        "frozen_model_sha256": "3c2bbc7b95c79d77cdbc514d578ffbeab08efdb02fe20f3bdf51faeba87155b0",
+        "resource_admission": {
+          "disk_free_bytes": 3088576512,
+          "minimum_free_gib": 2.0,
+          "minimum_headroom_mib": 512.0,
+          "peak_memory_guaranteed": false,
+          "cache_purge_used": false,
+          "available": true,
+          "cgroup_memory_max": 2147483648,
+          "cgroup_memory_current": 1300783104,
+          "cgroup_headroom_bytes": 846700544,
+          "memory_checked_before_runtime_imports": false
+        }
+      }
+    }
+  ],
+  "first_failure_preserved": "new_native_whole: output placement inside parent directory of the root-level tool was safely rejected before native trials; binary copied unchanged to sibling native_bin/",
+  "native_selftests": {
+    "framed_selftest": {
+      "status": "passed",
+      "mode": "self-test",
+      "checks": 6,
+      "excluded_action_rejections": 3,
+      "excluded_id_rejections": 3,
+      "retained_physical_ids": [
+        16,
+        17,
+        18,
+        19,
+        23,
+        24
+      ],
+      "strict_eight_pool": true
+    },
+    "fixed_selftest": {
+      "status": "passed",
+      "mode": "self-test",
+      "checks": 14,
+      "excluded_action_rejections": 3,
+      "retained_physical_ids": [
+        33,
+        36
+      ],
+      "strict_eight_pool": true,
+      "adaptive_selection": false,
+      "expansion_fallback": false
+    }
+  },
+  "native_sha256": {
+    "/root/autodl-tmp/cacf_release_validation_20261112_v1/build_framed/FrozenPlanFile": "bee65d9b471fdb3450b5186ea7b9bf20da6a926bdd5ae3ddc9ad82af21a641c5",
+    "/root/autodl-tmp/cacf_release_validation_20261112_v1/native_bin/BtrBlocksFixed_strict8": "655c5d86ddf01762011c9a57f38b7423d8aa4b1fc8c3e274872e6f781f7d8994"
+  },
+  "source_inventory_sha256": "00ba96b6745a592e8f6fdeb0a3b7d00f562bca12804eba7d919d2d781ae45fae",
+  "source_files_unchanged": true,
+  "both_synthetic_outputs_byte_identical_to_prior_authenticated_binaries": true,
+  "clean_host_full_dependency_build": false,
+  "existing_external_headers_and_libraries_reused": true,
+  "models_retrained": false,
+  "paper_benchmark": false
+}

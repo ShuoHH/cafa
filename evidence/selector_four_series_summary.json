@@ -1,0 +1,262 @@
+{
+  "version": "strict8_selector_public_summary_v1",
+  "source_aggregate_sha256": "6e8abb61b22c2ca3c7fd84c25a92eb8f4b502dba1e322a3e00a9e56bc011778a",
+  "scope": "four evaluated series on strict8-compatible final geometry; three positive series shown in main plots; BT retained separately",
+  "all_four": {
+    "series": 4,
+    "segments": 60,
+    "arms": {
+      "base10": {
+        "complete_file_bits": 2523480,
+        "hits": 51,
+        "hit_pct": 85.0
+      },
+      "frozen20": {
+        "complete_file_bits": 2488640,
+        "hits": 54,
+        "hit_pct": 90.0
+      },
+      "decimal15": {
+        "complete_file_bits": 2548576,
+        "hits": 53,
+        "hit_pct": 88.33333333333333
+      },
+      "residue15": {
+        "complete_file_bits": 2504552,
+        "hits": 49,
+        "hit_pct": 81.66666666666667
+      },
+      "all": {
+        "complete_file_bits": 2436096,
+        "hits": null,
+        "hit_pct": null
+      }
+    },
+    "frozen20_reduction_vs_base10_pct": 1.3806330939813316,
+    "frozen20_overhead_vs_oracle_pct": 2.1568936527952998
+  },
+  "displayed_positive_three": {
+    "series": 3,
+    "segments": 57,
+    "arms": {
+      "base10": {
+        "complete_file_bits": 1971032,
+        "hits": 49,
+        "hit_pct": 85.96491228070175
+      },
+      "frozen20": {
+        "complete_file_bits": 1889192,
+        "hits": 52,
+        "hit_pct": 91.2280701754386
+      },
+      "decimal15": {
+        "complete_file_bits": 1949128,
+        "hits": 51,
+        "hit_pct": 89.47368421052632
+      },
+      "residue15": {
+        "complete_file_bits": 1952104,
+        "hits": 47,
+        "hit_pct": 82.45614035087719
+      },
+      "all": {
+        "complete_file_bits": 1887800,
+        "hits": null,
+        "hit_pct": null
+      }
+    },
+    "frozen20_reduction_vs_base10_pct": 4.152139589818937,
+    "frozen20_overhead_vs_oracle_pct": 0.0737366246424509
+  },
+  "bt_separate": {
+    "series": 1,
+    "segments": 3,
+    "arms": {
+      "base10": {
+        "complete_file_bits": 552448,
+        "hits": 2,
+        "hit_pct": 66.66666666666667
+      },
+      "frozen20": {
+        "complete_file_bits": 599448,
+        "hits": 2,
+        "hit_pct": 66.66666666666667
+      },
+      "decimal15": {
+        "complete_file_bits": 599448,
+        "hits": 2,
+        "hit_pct": 66.66666666666667
+      },
+      "residue15": {
+        "complete_file_bits": 552448,
+        "hits": 2,
+        "hit_pct": 66.66666666666667
+      },
+      "all": {
+        "complete_file_bits": 548296,
+        "hits": null,
+        "hit_pct": null
+      }
+    },
+    "frozen20_reduction_vs_base10_pct": -8.507588044485637,
+    "frozen20_overhead_vs_oracle_pct": 9.32926740300859
+  },
+  "rows": [
+    {
+      "series": "202005_SPlite2",
+      "segments": 45,
+      "values": 44640,
+      "source_kind": "authenticated_reused_identical_geometry",
+      "arms": {
+        "base10": {
+          "complete_file_bits": 775896,
+          "hits": 40,
+          "hit_pct": 88.88888888888889,
+          "container_sha256": "0a5e72c3af9f342537d6be64bdfaddc54fbec2cb29e6df11c4cd5bf48f465056"
+        },
+        "frozen20": {
+          "complete_file_bits": 774720,
+          "hits": 41,
+          "hit_pct": 91.11111111111111,
+          "container_sha256": "1a803a434304e1b6fe5a24dc5428073ce63981ae3919c56bd33f22c1a361d258"
+        },
+        "decimal15": {
+          "complete_file_bits": 774608,
+          "hits": 42,
+          "hit_pct": 93.33333333333333,
+          "container_sha256": "b10b9297913e88c8348803bba66a2e4c0994686a981afad6c33adf09b74297fb"
+        },
+        "residue15": {
+          "complete_file_bits": 777584,
+          "hits": 38,
+          "hit_pct": 84.44444444444444,
+          "container_sha256": "120f4c054f971fbb39fbcffbbea0d1860779b9727a2072927be9e7ca36211f11"
+        },
+        "all": {
+          "complete_file_bits": 773552,
+          "hits": null,
+          "hit_pct": null,
+          "container_sha256": "02408afc2213aa73ada80cd684e2c9fd9163129a4dfdc59bb3b258c9972eb4ae"
+        }
+      }
+    },
+    {
+      "series": "BT",
+      "segments": 3,
+      "values": 20000,
+      "source_kind": "fresh_new_geometry_same_price_evaluation",
+      "arms": {
+        "base10": {
+          "complete_file_bits": 552448,
+          "hits": 2,
+          "hit_pct": 66.66666666666667,
+          "container_sha256": "c2cb637440b0f358e31196eb4e004625959a29f622cff0d37f33ab2812be9aa2"
+        },
+        "frozen20": {
+          "complete_file_bits": 599448,
+          "hits": 2,
+          "hit_pct": 66.66666666666667,
+          "container_sha256": "af312a6aa1f00e7870833f81b8d945c8002568682e9ce8c14876a4f0f9364078"
+        },
+        "decimal15": {
+          "complete_file_bits": 599448,
+          "hits": 2,
+          "hit_pct": 66.66666666666667,
+          "container_sha256": "af312a6aa1f00e7870833f81b8d945c8002568682e9ce8c14876a4f0f9364078"
+        },
+        "residue15": {
+          "complete_file_bits": 552448,
+          "hits": 2,
+          "hit_pct": 66.66666666666667,
+          "container_sha256": "c2cb637440b0f358e31196eb4e004625959a29f622cff0d37f33ab2812be9aa2"
+        },
+        "all": {
+          "complete_file_bits": 548296,
+          "hits": null,
+          "hit_pct": null,
+          "container_sha256": "8ee0581b02f11e4312ec4507df3a43647cf48fafe9a358b1c59e7f79ebda83b9"
+        }
+      }
+    },
+    {
+      "series": "BM",
+      "segments": 6,
+      "values": 17964,
+      "source_kind": "authenticated_reused_identical_geometry",
+      "arms": {
+        "base10": {
+          "complete_file_bits": 420872,
+          "hits": 4,
+          "hit_pct": 66.66666666666667,
+          "container_sha256": "5da1ae4074e30988e4c91687ed5b417d8762fe52dfc37d0b94f64e90f8ae42cf"
+        },
+        "frozen20": {
+          "complete_file_bits": 361776,
+          "hits": 5,
+          "hit_pct": 83.33333333333333,
+          "container_sha256": "a1c30d2da91401e4df0a4be531ef846868a8283a6cb9085013281ffd0c91eddc"
+        },
+        "decimal15": {
+          "complete_file_bits": 421824,
+          "hits": 3,
+          "hit_pct": 50.0,
+          "container_sha256": "bcc77a3f61dc37d518a812b5593fe3b61a05bedcbda164cb4c397ee305c702a7"
+        },
+        "residue15": {
+          "complete_file_bits": 421824,
+          "hits": 3,
+          "hit_pct": 50.0,
+          "container_sha256": "bcc77a3f61dc37d518a812b5593fe3b61a05bedcbda164cb4c397ee305c702a7"
+        },
+        "all": {
+          "complete_file_bits": 361552,
+          "hits": null,
+          "hit_pct": null,
+          "container_sha256": "100e513c6cebe300224d686739966fd1281b7674254a4eb34a37bc008951888a"
+        }
+      }
+    },
+    {
+      "series": "geolife_074_lon",
+      "segments": 6,
+      "values": 20000,
+      "source_kind": "fresh_new_geometry_same_price_evaluation",
+      "arms": {
+        "base10": {
+          "complete_file_bits": 774264,
+          "hits": 5,
+          "hit_pct": 83.33333333333333,
+          "container_sha256": "e12b203be53e8678064fb76cc19097a068f34af2e63f099e3cfef1c6ebcc3460"
+        },
+        "frozen20": {
+          "complete_file_bits": 752696,
+          "hits": 6,
+          "hit_pct": 100.0,
+          "container_sha256": "6dccdfe6bec156c8afc0878dd0ed4abe21ca6f8f1e46e86a78137a9f83f10393"
+        },
+        "decimal15": {
+          "complete_file_bits": 752696,
+          "hits": 6,
+          "hit_pct": 100.0,
+          "container_sha256": "6dccdfe6bec156c8afc0878dd0ed4abe21ca6f8f1e46e86a78137a9f83f10393"
+        },
+        "residue15": {
+          "complete_file_bits": 752696,
+          "hits": 6,
+          "hit_pct": 100.0,
+          "container_sha256": "6dccdfe6bec156c8afc0878dd0ed4abe21ca6f8f1e46e86a78137a9f83f10393"
+        },
+        "all": {
+          "complete_file_bits": 752696,
+          "hits": null,
+          "hit_pct": null,
+          "container_sha256": "80897a280fcc17e5bd69459e96d1b5630990a986af6c031c77773eb327940139"
+        }
+      }
+    }
+  ],
+  "new_model_training": false,
+  "fresh_execution_during_publication_preparation": false,
+  "geometry_provenance": "Some unchanged geometries reuse authenticated quality evidence; see source_kind. Not all four series were newly recompressed.",
+  "full_payloads_and_decode_certificates_bundled": false
+}

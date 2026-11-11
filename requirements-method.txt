@@ -1,0 +1,6 @@
+# Historical Python environment for the CACF methods; not a full native build lock.
+-r requirements-demo.txt
+claspy==0.2.8
+numba==0.61.2
+scipy==1.15.3
+threadpoolctl==3.7.0

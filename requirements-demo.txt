@@ -1,0 +1,5 @@
+# Python 3.12.3, matching the frozen model's recorded environment.
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+joblib==1.6.0

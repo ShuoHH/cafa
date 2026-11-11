@@ -1,0 +1,56 @@
+{
+  "version": "packaged_primary_BM_validation_v1",
+  "all_selected_verified": true,
+  "all13_verified": false,
+  "scope": "one freshly recomputed original research series using the packaged exact-input driver and newly compiled strict8 native wrappers",
+  "series": "BM",
+  "complete_file_bits": 361776,
+  "final_segments": 6,
+  "stored_sha256": "a1c30d2da91401e4df0a4be531ef846868a8283a6cb9085013281ffd0c91eddc",
+  "input_sha256": "11bc5d17f4045860cdad4201598d26ff1139549629c4a3c087969254f22cb2e4",
+  "dp_full_pricing_complete": true,
+  "dp_priced_edges": 45,
+  "dp_possible_edges": 45,
+  "dp_pricing_mode": "paper_full_graph",
+  "matches_preserved_result": {
+    "complete_file_bits": true,
+    "final_segments": true,
+    "stored_sha256": true
+  },
+  "native_audit": {
+    "series": "BM",
+    "strict8_boundary_trial_count": 1928,
+    "boundary_trials_retained8": true,
+    "persisted_inspection": {
+      "path": "/root/autodl-tmp/cacf_release_validation_20261112_v1/paper_BM/BM/dp/after_dp.f64pool",
+      "method_id": 7,
+      "container_version": "F64PL001",
+      "values": 17964,
+      "frames": 9,
+      "complete_file_bytes": 45222,
+      "complete_file_bits": 361776,
+      "codec_storage_bytes": 45090,
+      "framing_bytes": 132,
+      "envelope_valid": true,
+      "decoder_losslessness_not_checked_by_inspector": true,
+      "actual_physical_codec_counts": {
+        "btr_decimal_fixed": 1,
+        "alp": 4,
+        "btr_dict_bp": 1,
+        "chimp128": 3
+      },
+      "actual_frame_ids_restricted8": true
+    },
+    "full_dp_pricing": true,
+    "source_files_unchanged": true,
+    "only_one_research_series_checked": true
+  },
+  "private_evidence_archive_sha256": "847234e80bf515b2188944542d0cd892e0b56e7be9c0301851268350bdeb1b3e",
+  "all_downloaded_members_sha_verified": true,
+  "decoded_bytes_compared_to_local_preserved_input": true,
+  "packaged_runtime_source_files_match_tested_snapshot": true,
+  "models_refitted": false,
+  "paper_timing_claim": false,
+  "original_input_bytes_published": false,
+  "clean_host_full_dependency_build": false
+}
